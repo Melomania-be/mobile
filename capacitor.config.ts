@@ -5,7 +5,7 @@ const config: CapacitorConfig = {
   appName: 'Melomania',
   webDir: 'www',
   server: {
-    url: 'http://192.168.1.73:5173',
+    url: 'https://tool.melomania.be',
     cleartext: true
   }
 };
