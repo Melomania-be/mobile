@@ -9,10 +9,10 @@ This guide describes how to distribute the mobile app to Aurian and other users,
 Since the app is not published on the Google Play Store, Android users can install the app package (`.apk`) directly.
 
 ### How to get the APK
-The latest compiled Android app package is named **`app-debug.apk`**.
+The latest compiled Android app package is named **`melomania.apk`**.
 
 ### Installation Steps for Android Users:
-1. **Download the APK:** Open the GitHub release link or repository page on your Android phone and download the `app-debug.apk` file.
+1. **Download the APK:** Open the GitHub release link or repository page on your Android phone and download the `melomania.apk` file.
 2. **Open the File:** Once downloaded, tap the file in your downloads folder or notification bar.
 3. **Enable Unknown Sources (First time only):** 
    * Android will show a warning: *"For your security, your phone is not allowed to install unknown apps from this source."*
@@ -24,7 +24,7 @@ The latest compiled Android app package is named **`app-debug.apk`**.
 
 ---
 
-## 🍏 iOS / iPhone Installation (Alternative)
+## 📱 iOS / iPhone Installation (Alternative)
 
 Directly side-loading application packages (`.ipa` files) on iPhones is blocked by Apple's operating system security unless using Xcode or developer accounts. 
 
@@ -40,16 +40,9 @@ A **Melomania** icon will be added to your iPhone's home screen. Launching it fr
 
 ---
 
-## 🛠 Instructions for Developer (Alfred)
+## 🛠 Instructions for Developer
 
 ### 1. Locate the Compiled APK
 The Android APK has been compiled on your machine and is located at:
 `mobile/android/app/build/outputs/apk/debug/app-debug.apk`
 
-### 2. How to Upload the APK to GitHub Releases (Recommended)
-Do not commit the binary `.apk` directly into your git repository, as this bloat slows down repository checkout speeds. Instead, upload it as a release asset:
-1. Go to your repository on **GitHub.com**.
-2. On the right-hand sidebar, click **Releases** $\rightarrow$ **Draft a new release**.
-3. Create a version tag (e.g., `v1.0.0`) and title.
-4. Drag and drop **`app-debug.apk`** from your computer into the box labeled *"Attach binaries by dropping them here"*.
-5. Publish the release. Users can now download the APK directly from the release page!
